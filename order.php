@@ -1,13 +1,27 @@
 <?php
+$productName = "Бластер";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Получение данных из формы
-    $count = $_POST['count']; // Выбранный продукт
-    $name = $_POST['name']; // Имя пользователя
-    $phone = $_POST['phone']; // Номер телефона пользователя
-    $productName = 'Бластер'
+    // $count = $_POST['count']; // Выбранный продукт
+    // $name = $_POST['name']; // Имя пользователя
+    // $phone = $_POST['phone']; // Номер телефона пользователя
+    // $productName = 'Бластер';
+
+    if(isset($_POST['count'], $_POST['name'], $_POST['phone'])) {
+    $count = $_POST['count'];
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+
+    // Далее ваш код для отправки сообщения в телеграм
+} else {
+    echo "Ошибка: Пустые поля формы";
+}
+
+
 
     // Замените 'YOUR_BOT_TOKEN' на актуальный токен вашего бота
     $botToken = '6721817401:AAEML8ZM2TU1Qb5euBZ-wgvAgFdvtHNIHG4';
+
     $chatId = '-4047226917'; // Укажите ID чата, куда вы хотите отправлять сообщения
 
     // Формируем текст сообщения для отправки
@@ -23,12 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = curl_exec($ch);
     curl_close($ch);
 
-    // Проверяем результат и выводим сообщение об успешной отправке или об ошибке
-    if ($result) {
-        echo "Спасибо! Ваш заказ был отправлен.";
-    } else {
-        echo "Извините, произошла ошибка при отправке заказа.";
-    }
+    //  $sendToTelegram = fopen("https://api.telegram.org/bot{$botToken}/sendMessage?chat_id={$chatId}&parse_mode=html&text={$message}", "r");
 }
 ?>
 <!DOCTYPE html>
@@ -46,11 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </script>
     <meta charset="utf-8">
     <title>
-    <?php if ($_POST['phone']) {
-            echo 'Дякуємо за замовлення!';
-        } else {
-            echo 'Якась проблема...';
-        } ?>
+
     </title>
     <style type="text/css">
         body {

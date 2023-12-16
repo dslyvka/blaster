@@ -215,6 +215,20 @@
             </div>
           </div>
           <div class="product-description">
+            <div style="margin-bottom: 20px">
+              <h2 class="title"><span>Відеоогляд</span></h2>
+              <!-- style="display: block; margin: 0 auto" -->
+              <iframe
+                style="display: block; margin: 0 auto"
+                width="400"
+                height="315"
+                src="https://www.youtube.com/embed/3ucjmF3y-8U?si=1sv4DbkXotffeLVM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
             <h2 class="title"><span>Опис </span></h2>
             <div class="presentation-wrap">
               <div class="presentation">
@@ -256,11 +270,14 @@
                           height="803"
                         />
                       </p>
-                      На рукоятці знаходиться 2 кнопки управління: вкл-викл та
-                      запуску стрільби, тому користуватися зброєю дуже просто!
-                      Для початку необхідно вставити до упору(!) 28 патронів в
-                      осередку барабана, включити бластер, зняти запобіжник,
-                      прицілитися і натиснути кнопку пуску.
+                      <p>
+                        На рукоятці знаходиться 2 кнопки управління: вкл-викл та
+                        запуску стрільби, тому користуватися зброєю дуже просто!
+                        Для початку необхідно вставити до упору(!) 28 патронів в
+                        осередку барабана, включити бластер, зняти запобіжник,
+                        прицілитися і натиснути кнопку пуску.
+                      </p>
+
                       <p>
                         <img
                           decoding="async"
@@ -272,10 +289,14 @@
                           height="803"
                         />
                       </p>
-                      Мультибластер автоматично починає випускати кілька куль в
-                      секунду, вражаючи вашу ціль на відстані до 10 метрів.
-                      М'які кулі з присосками безпечні і не завдають шкоди ні
-                      здоров'ю, ні оточуючим предметам.
+                      <h2 class="title"><span>Переваги</span></h2>
+                      <p>
+                        Мультибластер автоматично починає випускати кілька куль
+                        в секунду, вражаючи вашу ціль на відстані до 10 метрів.
+                        М'які кулі з присосками безпечні і не завдають шкоди ні
+                        здоров'ю, ні оточуючим предметам.
+                      </p>
+
                       <p>
                         <img
                           decoding="async"
@@ -326,17 +347,6 @@
             </div>
           </div>
 
-          <h2 class="title">Відеоогляд</h2>
-          <iframe
-            width="480"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/tdZAi0KvEso"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen=""
-          ></iframe>
-
           <div class="specifications">
             <h2 class="title">Характеристики</h2>
             <!-- <div class="image">
@@ -356,10 +366,6 @@
               <li>
                 <b>Колір:</b>
                 <span>Чорний з червоним</span>
-              </li>
-              <li>
-                <b>Особливості:</b>
-                <span>Звукові ефекти</span>
               </li>
               <li>
                 <b>Тип живлення:</b>
@@ -485,7 +491,7 @@
             </div>
           </section>
 
-          <section class="order_info2_section">
+          <!-- <section class="order_info2_section">
             <h2 class="title">Доставка і оплата</h2>
             <div class="order_info_list2">
               <div class="info_item">
@@ -526,7 +532,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
 
           <div class="top-card-wrap">
             <div class="item-card">
@@ -575,11 +581,7 @@
 
             <div class="contact-form" id="order_form">
               <div class="oreder-form">
-                <form
-                  action="order.php"
-                  method="post"
-                  class="wpcf7-form"
-                >
+                <form action="./order.php" method="post" class="wpcf7-form">
                   <!-- <span class="wpcf7-form-control-wrap" data-name="select-discount">
                                     <select name="product_name" class="input select-discount" id="select-discount">
                                         <option value="Не вибраний" data-number="1" selected="">▼ Обрати дизайн</option>
@@ -596,9 +598,7 @@
                       class="input select-discount"
                       id="select-discount"
                     >
-                      <option value="1 шт" selected="">
-                        ▼ Обрати кiлькiсть (шт.)
-                      </option>
+                      <option value="1 шт">Обрати кiлькiсть (шт.)</option>
                       <option value="1 шт">1 шт</option>
                       <option value="2 шт">2 шт</option>
                       <option value="3 шт">3 шт</option>
@@ -649,7 +649,7 @@
             <p style="text-align: center">
               Графік роботи: Пн - Нд: 08:00 - 20:00
             </p>
-            <p style="text-align: center">Наш телефон: +380983316745</p>
+
             <br />
           </div>
           <br />
